@@ -1,0 +1,26 @@
+{
+  "name": "practica-3",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/esau670/practica3Desarrolloweb.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/esau670/practica3Desarrolloweb/issues"
+  },
+  "homepage": "https://github.com/esau670/practica3Desarrolloweb#readme",
+  "description": "",
+  "dependencies": {
+    "dotenv": "^17.2.1",
+    "express": "^5.1.0",
+    "pg": "^8.16.3",
+    "postgres": "^3.4.7"
+  }
+}
