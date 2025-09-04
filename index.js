@@ -10,7 +10,7 @@ app.use(express.json());
 
 // Conexión a PostgreSQL con variables de entorno
 const pool = new Pool({
-  connectionString: process.env.DATABASE_URL,
+  connectionString: process.env.URL_POSTGRES,
   ssl: { rejectUnauthorized: false }
 });
 
@@ -25,6 +25,7 @@ app.get("/api/usuarios", async (req, res) => {
     const result = await pool.query("SELECT * FROM usuarios");
     res.json(result.rows);
   } catch (error) {
+    console.error("Error al obtener usuarios:", error);
     res.status(500).json({ error: error.message });
   }
 });
